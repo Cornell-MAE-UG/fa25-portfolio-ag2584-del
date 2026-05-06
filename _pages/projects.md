@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arda Griffin - Portfolio
+title: Elias Herrera Hernandez - Portfolio
 permalink: /projects/
 ---
 
@@ -8,10 +8,12 @@ permalink: /projects/
 <div class="project-gallery">
     {% for project in site.projects %}
       <div class="gallery-item">
-        <a href="{{ project.url | relative_url }}">
+        {% if project.group != "group1" %}
+          <a href="{{ project.url | relative_url }}">
           <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
-          <p>{{ project.title}}</p>
+          <p>{{ project.title }}</p>
         </a>
+        {% endif %}
       </div>
     {% endfor %}
 </div>
