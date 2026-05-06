@@ -1,7 +1,7 @@
 ---
 layout: default
 title: MAE 2250
-image: /assets/images/spotted_lanternfly3.jpg
+image: /assets/images/slf1.png
 permalink: /projects/2250project
 ---
 
